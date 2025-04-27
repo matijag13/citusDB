@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "citus.fullname" . }}-coordinator
+  labels:
+    app: {{ include "citus.fullname" . }}-coordinator
+spec:
+  type: ClusterIP
+  ports:
+    - port: 5432
+      targetPort: 5432
+      name: postgres
+  selector:
+    app: {{ include "citus.fullname" . }}-coordinator

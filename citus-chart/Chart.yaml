@@ -1,0 +1,5 @@
+apiVersion: v2
+name: citus
+description: A Citus distributed PostgreSQL cluster
+version: 0.1.0
+appVersion: "12.1"
