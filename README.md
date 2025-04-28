@@ -13,7 +13,6 @@
 ## 1. Kubernetes okolje - Minikube
 
 minikube start
-```
 
 ## 2. Namestitev Citus preko Helm
 
